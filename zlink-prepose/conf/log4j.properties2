@@ -1,0 +1,23 @@
+log4j.rootCategory=INFO, arf, stdout
+log4j.logger.com.zefu=INFO
+log4j.logger.com.zefu.portals=INFO, portals
+
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=[portals] %d{yyyy-MM-dd HH:mm:ss:sss} %-5p%5.5r [%15.15t] %40.40c : %m%n
+
+log4j.appender.arf=org.apache.log4j.RollingFileAppender
+log4j.appender.arf.Append=true
+log4j.appender.arf.MaxFileSize=20MB
+log4j.appender.arf.MaxBackupIndex=2
+log4j.appender.arf.File=../logs/all.log
+log4j.appender.arf.layout=org.apache.log4j.PatternLayout
+log4j.appender.arf.layout.ConversionPattern=[portals] %d{yyyy-MM-dd HH:mm:ss:sss} %-5p%5.5r [%15.15t] %40.40c : %m%n
+
+log4j.appender.portals=org.apache.log4j.RollingFileAppender
+log4j.appender.portals.Append=true
+log4j.appender.portals.MaxFileSize=20MB
+log4j.appender.portals.MaxBackupIndex=2
+log4j.appender.portals.File=../logs/portals.log
+log4j.appender.portals.layout=org.apache.log4j.PatternLayout
+log4j.appender.portals.layout.ConversionPattern=[portals] %d{yyyy-MM-dd HH:mm:ss:sss} %-5p%5.5r [%15.15t] %40.40c : %m%n

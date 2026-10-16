@@ -1,0 +1,7 @@
+server:
+  port: 8099
+
+prepose:
+  #groupUrl: http://10.92.12.51:8087/zefu-portal-index
+  groupUrl: https://daep.dfmc.com.cn
+
